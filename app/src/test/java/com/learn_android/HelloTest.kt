@@ -6,7 +6,7 @@ import org.junit.Test
 class HelloTest {
     @Test
     fun sayHelloTest() {
-        val result = Hello().sayHello("Yusril")
+        val result = Hello.sayHello("Yusril")
         Assert.assertEquals("Hello, Yusril", result)
     }
 }

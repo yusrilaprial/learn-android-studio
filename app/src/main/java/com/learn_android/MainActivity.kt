@@ -1,5 +1,6 @@
 package com.learn_android
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
@@ -13,11 +14,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nameEditText: EditText
     private lateinit var sayHelloButton: Button
     private lateinit var sayHelloTextView: TextView
+    private lateinit var toGameScreenButton: Button
 
     private fun initComponents() {
         nameEditText = findViewById(R.id.nameEditText)
         sayHelloButton = findViewById(R.id.sayHelloButton)
         sayHelloTextView = findViewById(R.id.sayHelloTextView)
+        toGameScreenButton = findViewById(R.id.toGameScreenButton)
     }
 
     private fun checkFingerprint() {
@@ -41,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hello_world)
+        setContentView(R.layout.activity_main)
 
         initComponents()
 
@@ -80,6 +83,11 @@ class MainActivity : AppCompatActivity() {
             resources.getStringArray(R.array.names).forEach {
                 Log.i("MYA", it)
             }
+        }
+
+        toGameScreenButton.setOnClickListener {
+            val intent = Intent(this, GameActivity::class.java)
+            startActivity(intent)
         }
     }
 }

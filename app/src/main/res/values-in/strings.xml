@@ -3,4 +3,8 @@
     <string name="nameEditText">Nama:</string>
     <string name="sayHelloButton">Ucapkan Halo</string>
     <string name="sayHelloTextView">Halo, %1$s</string>
+    <string name="computer">KOMPUTER</string>
+    <string name="you">KAMU</string>
+    <string name="result">HASIL</string>
+    <string name="game">Game</string>
 </resources>

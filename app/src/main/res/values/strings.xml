@@ -3,6 +3,10 @@
     <string name="nameEditText">Name:</string>
     <string name="sayHelloButton">Say Hello</string>
     <string name="sayHelloTextView">Hello, %1$s</string>
+    <string name="computer">COMPUTER</string>
+    <string name="you">YOU</string>
+    <string name="result">RESULT</string>
+    <string name="game">Game</string>
     <string-array name="names">
         <item>Yusril</item>
         <item>Aprial</item>
